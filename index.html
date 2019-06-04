@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-database.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+      <div class="section1">
+        <h1>Anytime is a Train Time</h1>
+        <p> Cho Cho. Chee Chee.</p>
+    </div>
+
+    <div class="section2">
+    <p id="tittle">Current Train Schedule</p>
+    <div id="CurrentSchedule">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frecuency (min)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>nhg</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>nhg</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>nhg</td>
+            </tr>
+        </tbody>
+    </table>
+
+    </div>
+    </div>
+
+        <div class="section3">
+        
+        <p id="tittle">Add Train</p>
+       
+        <form>
+            <div class="form-group">
+                <label for="InputTrainName">Train Name</label>
+                <input type="text" class="form-control" id="InputTrainName">
+            </div>
+            <div class="form-group">
+                <label for="InputDestination">Destination</label>
+                <input type="text " class="form-control" id="InputDestination">
+            </div>
+            <div class="form-group">
+                <label for="InputFirstTrainTime">First Train time (military time HH:mm)</label>
+                <input type="text" class="form-control" id="InputFirstTrainTime">
+            </div>
+            <div class="form-group">
+                <label for="InputFrecuency">Frecuency (min)</label>
+                <input type="text" class="form-control" id="InputFrecuency">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>  
+    </div>
+    
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
